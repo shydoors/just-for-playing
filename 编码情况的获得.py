@@ -13,7 +13,7 @@ def read_files_in_folder(folder_path):
     return coding_s
 
 # 示例使用
-folder_path = "Appendix-3"
+folder_path = "长春市"
 s = read_files_in_folder(folder_path)
 df=pd.DataFrame(list(s.items()), columns=['encoding', 'count'], index=None)
 print(df.sort_values(by='count', ascending=True).to_string(index=False))
